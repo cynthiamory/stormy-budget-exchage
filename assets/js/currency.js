@@ -17,4 +17,3 @@ function bringData(event){
             document.getElementById("result").innerHTML= `${amount} ${from} = ${data.rates[to]} ${to}`;
           });
         }
-    
