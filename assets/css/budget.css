@@ -1,3 +1,9 @@
+/* START OF CYNTHIA'S BUDGET CSS */
+body{
+  font-family: 'Unica One', cursive;
+  font-size: large;
+}
+
 html {
     font-size: 18px;
   }
@@ -11,7 +17,7 @@ html {
   }
   
   h1 {
-    
+    text-align: center;
   }
   
   i {
@@ -22,25 +28,13 @@ html {
     height: 24px;
     display: inline-block;
   }
-  
-  i.frown {
-    background-image: url('//cdnjs.cloudflare.com/ajax/libs/twemoji/1.2.1/36x36/1f612.png');
-  }
-  i.tear {
-    background-image: url('//twemoji.maxcdn.com/72x72/1f613.png');
-  }
-  i.happy {
-    background-image: url('//twemoji.maxcdn.com/72x72/1f603.png');
-  }
+
   
   .title {
       margin: 0;
       display: inline-block;
     }
   
-  .emoji {
-    margin:0 0 0 10px;
-  }
   
   input {
     display: block;
@@ -63,7 +57,7 @@ html {
     }
   }
   
-  .box-of-stuff {
+  .box-it {
   min-height: 20px;
   padding: 19px;
   margin: 20px 0 ;
@@ -81,21 +75,30 @@ html {
     color: #b94a48;
   }
   
-  .center-meh-boi {
+  .center-budget-form {
     position: absolute;
     top: 50%;
     width: 100%;
   }
   
+
   .row {
     max-width: 1200px;
     margin: 0 auto;
   }
   
+  /* CURRENCY CSS */
+  .center-currency-form {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+  }
+  /* MEDIA QUERIES FOR THE BUDGET */
   @media (max-width: 768px) {
-    .center-meh-boi {
+    .center-budget-form {
       position: relative;
       top: 0;
       margin-top: 0 !important;
     }
   }
+  /* END OF CYNTHIA'S BUDGET CSS /

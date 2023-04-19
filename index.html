@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--BOOTSTRAP LINKS FOR BUDGET-->
+<!--BOOTSTRAP LINKS FOR BUDGET-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
-    <script src="./assets/js/curency.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/budget.css">
     <title>Stormy Budget Exchange</title>
 </head>
 
-<!--BUDGET SECTION-->
 <body>
-  <!--Javascript Linking -->
 
-<h1>Currency Exchanger$$$$</h1>
+  <h1>Stormy Budget Exchange</h1>
+  <!-- THIS IS TO BRING THE CURRENCY SECTION TO THE LEFT (CURRENTLY STILL A WORK IN PROGRESS) -->
+<div class="center-currency-form">
+<div class="col-sm-3 col-sm-offset-1 m-5 p-5">       
+
+<!--START OF JACOB'S CURRECY SECTION--> 
+<h4>Currency Exchanger</h4>
 <form onsubmit="bringData(event)">
   <select name="from" id="from">
       <option value="EUR">EUR</option>
@@ -39,11 +45,13 @@
 </form>
 <div id="result"></div>
 
-<!--budget-->
-    <div class="container-fluid center-meh-boi">
+<!--END OF JACOB'S CURRECY SECTION-->
+
+<!--START OF CYNTHIA'S BUDGET SECTION-->
+    <div class="container-fluid center-budget-form">
         <div class="row">
           <div class="col-sm-6 col-sm-offset-1">
-            <div class="box-of-stuff">
+            <div class="box-it">
                     <form>
         <input class="form-control input-lg" type="text" id="budget" placeholder="Budget"/>
         <input class="form-control input-lg" type="text" id="necessities" placeholder="Necessities"/>
@@ -57,19 +65,26 @@
           <div class="col-sm-4">
             <div class="results">
               <h1 class="title">Results</h1>
-              <span class="emoji">
-              </span>
               <div class="results-data">
-                <p>Hit that submit button to see your results!</p>
+                <p>Use the form to enter your total budget and expenses and hit the Get Budget Button!</p>
               </div>
-      </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <!--JQUERY CDN FOR BUDGET-->
+ <!--END OF CYNTHIA'S BUDGET SECTION-->   
+
+<!--START OF ABHISHEK'S WEATHER SECTION--> 
+
+<!-------ADD WEATHER CODE HERE-------->
+
+<!--END OF ABHISHEK'S WEATHER SECTION-->   
+
+<!--CYNTHIA'S JQUERY CDN AND MIN JS FOR BUDGET--> 
       <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
-    <script src="./assets/js/currency.js"></script>
-  <script src="./assets/js/budget.js"></script>  
+    <script src="./assets/js/budget.js"></script> 
+
+ <!--JACOB'S JQUERY CDN AND FOR CURRENCY-->     
+    <script src="./assets/js/currency.js"></script> 
+  
 </body>
 </html>
