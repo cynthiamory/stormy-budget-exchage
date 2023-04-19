@@ -10,19 +10,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/budget.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Stormy Budget Exchange</title>
 </head>
 
 <body>
 
-  <h1>Stormy Budget Exchange</h1>
-  <!-- THIS IS TO BRING THE CURRENCY SECTION TO THE LEFT (CURRENTLY STILL A WORK IN PROGRESS) -->
-<div class="center-currency-form">
-<div class="col-sm-3 col-sm-offset-1 m-5 p-5">       
+  <h1 id="title1">Stormy Budget Exchange</h1>
 
-<!--START OF JACOB'S CURRECY SECTION--> 
-<h4>Currency Exchanger</h4>
+<!-- ABOUT US SECTION -->
+<aside id="about">
+  <h4>ABOUT US</h4>
+  <p>Keeping track of your spending can be diffucult while on vaction. From having additional expenses 
+    to no understanding the currency exchange can make you go over budget rather quickly. With this app you can 
+    convert your money and input your daily spendings to keep track of your balance. So you can go home 
+    and without the fear of never being able to go on vaction again.
+  </p>
+</aside>
+
+<!--START OF CYNTHIA'S BUDGET SECTION-->
+<section id="cynthia">
+  <div class="container-fluid center-budget-form">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-1">
+        <div class="box-it">
+                <form>
+    <input class="form-control input-lg" type="text" id="budget" placeholder="Budget"/>
+    <input class="form-control input-lg" type="text" id="necessities" placeholder="Necessities"/>
+    <input class="form-control input-lg" type="text" id="food" placeholder="Food"/>
+    <input class="form-control input-lg" type="text" id="activities" placeholder="Activities"/>
+    <input class="form-control input-lg" type="text" id="transportation" placeholder="Transportation"/>
+        </form>
+        <button class="btn btn-primary btn-lg btn-block bg-danger">Get Budget</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="results">
+          <h1 class="title">Results</h1>
+          <div class="results-data">
+            <p>Use the form to enter your total budget and expenses and hit the Get Budget Button!</p>
+          </div>
+        </div>
+      </div>
+</section>
+ 
+ <!--END OF CYNTHIA'S BUDGET SECTION-->   
+
+ <!--START OF JACOB'S CURRECY SECTION--> 
+<aside id="exchange-container">
+  <h4>Currency Exchanger</h4>
 <form onsubmit="bringData(event)">
   <select name="from" id="from">
       <option value="EUR">EUR</option>
@@ -44,37 +80,20 @@
   <input type="submit" value="submit">
 </form>
 <div id="result"></div>
+</aside>
 
 <!--END OF JACOB'S CURRECY SECTION-->
 
-<!--START OF CYNTHIA'S BUDGET SECTION-->
-    <div class="container-fluid center-budget-form">
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-1">
-            <div class="box-it">
-                    <form>
-        <input class="form-control input-lg" type="text" id="budget" placeholder="Budget"/>
-        <input class="form-control input-lg" type="text" id="necessities" placeholder="Necessities"/>
-        <input class="form-control input-lg" type="text" id="food" placeholder="Food"/>
-        <input class="form-control input-lg" type="text" id="activities" placeholder="Activities"/>
-        <input class="form-control input-lg" type="text" id="transportation" placeholder="Transportation"/>
-            </form>
-            <button class="btn btn-primary btn-lg btn-block bg-danger">Get Budget</button>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="results">
-              <h1 class="title">Results</h1>
-              <div class="results-data">
-                <p>Use the form to enter your total budget and expenses and hit the Get Budget Button!</p>
-              </div>
-            </div>
-          </div>
- <!--END OF CYNTHIA'S BUDGET SECTION-->   
+ 
 
 <!--START OF ABHISHEK'S WEATHER SECTION--> 
 
-<!-------ADD WEATHER CODE HERE-------->
+<section class="city">
+  <h3>Select City</h3>
+</section>
+<section class="weather">
+  <h1>WEATHER API</h1>
+</section>
 
 <!--END OF ABHISHEK'S WEATHER SECTION-->   
 
