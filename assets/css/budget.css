@@ -52,9 +52,10 @@ html {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-    .results-data {
-      margin: 1.5rem 0;
-    }
+  }
+
+  .results-data {
+    margin: 1.5rem 0;
   }
   
   .box-it {
