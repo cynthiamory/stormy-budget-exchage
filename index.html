@@ -13,6 +13,7 @@
 <!--CSS STYLING-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Stormy Budget Exchange</title>
+    
 </head>
 
 <body>
@@ -35,7 +36,9 @@
     <div class="row">
       <div class="col-sm-6 col-sm-offset-1">
         <div class="box-it">
-    <form>
+
+                <form class="option">
+
     <input class="form-control input-lg" type="text" id="budget" placeholder="Budget"/>
     <input class="form-control input-lg" type="text" id="necessities" placeholder="Necessities"/>
     <input class="form-control input-lg" type="text" id="food" placeholder="Food"/>
@@ -65,7 +68,7 @@
       <option value="USD">USD</option>
       <option value="CAD">CAD</option>
       <option value="AUD">AUD</option>
-      <option value="PESO">PESO</option>
+      <option value="MXN">MXN</option>
       <option value="INR">INR</option>
     </select>
   <select name="to" id="to">
@@ -73,7 +76,7 @@
       <option value="USD">USD</option>
       <option value="CAD">CAD</option>
       <option value="AUD">AUD</option>
-      <option value="PESO">PESO</option>
+      <option value="MXN">MXN</option>
       <option value="INR">INR</option>
     </select>
   <input placeholder="amount" type="number" min="0" name="amount">
@@ -103,8 +106,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
     <script src="./assets/js/budget.js"></script> 
 
- <!--JACOB'S JQUERY CDN AND FOR CURRENCY-->     
-    <script src="./assets/js/currency.js"></script> 
+ <!--JACOB'S JQUERY CDN AND FOR CURRENCY-->    
+  
+   <!-- <script src="./assets/js/curency.js"></script>  -->
+   <script src="./assets/js/currency.js"></script>
   
 </body>
 </html>
+

@@ -33,10 +33,70 @@ function centerme() {
 boiheight = $(".center-budget-form").height();
 middle = boiheight / 2;
 $(".center-budget-form").css("margin-top","-" + middle + "px");
-console.log(boiheight);
+// console.log(boiheight);
 }
 // END OF CYNTHIA'S JS BUDGET CODE
 
 // START OF LOCAL STORAGE CODE FOR SAGENTHAVE
-// ---ENTER LOCAL STORAGE HERE -----
+
+// Puts items in local storage
+$(document).on({ "click": function () {
+
+ const inputElements = document.querySelector('.option').children;
+  for (let i = 0; i < inputElements.length; i++) {
+    const input = inputElements[i];
+    //console.log(input.placeholder)
+    const inputValue = input.value;
+    const inputText = input.placeholder;
+    // console.log(inputText);
+
+    localStorage.setItem(inputText, inputValue) }
+  
+}},
+'.btn-primary')
+
+// Displays items from local storage
+function getFunction () {
+  
+  for (let i = 0; i < localStorage.length; i++) {
+    var inputText = localStorage.key(i);
+    var inputValue = localStorage.getItem(inputText);
+    // if(inputText == "Budget"){
+    //   $("#budget").val(inputValue);
+    // }
+    // if(inputText == "Budget"){
+    //   $("#budget").val(inputValue);
+   
+    // }
+    // if(inputText == "Necessities"){
+    //   $("#budget").val(inputValue);
+    // }
+    // if(inputText == "Budget"){
+    //   $("#budget").val(inputValue);
+    // }
+    
+    switch (inputText) {
+      case 'Budget':
+          $("#budget").val(inputValue);
+          break;
+      case 'Necessities':
+          $("#necessities").val(inputValue);
+          break;
+      case 'Food':
+          $("#food").val(inputValue); 
+          break;
+      case 'Activities':
+          $("#activities").val(inputValue); 
+          break;
+      case 'Transportation':
+          $("#transportation").val(inputValue);
+          break;
+    }
+      
+    }
+    // console.log(key + ': ' + value);
+  }
+
+getFunction();
+
 // END OF LOCAL STORAGE CODE FOR SAGENTHAVE
