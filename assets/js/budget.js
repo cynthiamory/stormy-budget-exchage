@@ -1,5 +1,4 @@
 // START OF CYNTHIA'S JS BUDGET CODE
-
 $("button").click(gather)
 $(document).ready(centerme);
 $(window).resize(centerme);
