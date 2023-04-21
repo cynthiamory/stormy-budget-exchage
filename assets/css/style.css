@@ -6,6 +6,7 @@ body {
     display: block;
     font-family:'Roboto', sans-serif;
     font-size: large;
+
 }
 
 h1 {
@@ -104,4 +105,9 @@ input {
     background-color:skyblue;
     opacity: 95%;
     border-radius: 6%;
+    font-size: 30px;
+}
+
+.bg-primary {
+    background-color: #fff!important;
 }
