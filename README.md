@@ -63,7 +63,7 @@ You and your group will use everything you’ve learned over the past six weeks 
 N/A
 
 ## Image Preview Mock-up
-![Website Preview Image](./assets/images/Stormy%20Budget%20Exchange.png)
+![Website Preview Image](./assets/images/stormy-budget-exchange-demo.png)
 
 ## Technologies Used
 

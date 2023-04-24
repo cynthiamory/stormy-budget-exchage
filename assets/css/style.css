@@ -21,18 +21,16 @@ h1 {
 
 /* ABOUT US CSS */
 
-#about {
-    margin-top: 85px;
-    margin-right: 20px;
-    margin-left: 20px;
-    padding: 20px;
+.center-about-us {
+    position:absolute;
+    text-align: center;
+    top: 10%;
+    width: 100%;
+    padding: 10px;
     clear: both;
-    float: left;
-    width: 20%;
-    height: 100%;
     background-color:skyblue;
     opacity: 95%;
-    border-radius: 6%;
+  
 }
 
 /* BUDGET CSS */
@@ -56,34 +54,33 @@ input {
     
 .center-budget-form {
     position:absolute;
-    top: 35%;
+    top: 40%;
     width: 50%;
     margin-left: 350px;
     padding: 10px;
     clear: both;
     background-color:skyblue;
     opacity: 95%;
-    border-radius: 6%;
 }
 
 /* CURRENCY EXCHANGE CSS */
 #exchange-container {
-    margin-top: 85px;
-    margin-right: 20px;
+    margin-top: 11%;
+    margin-right: 90px;
     padding: 20px;
     float: right;
     width: 20%;
     height: 100%;
     background-color:skyblue;
     opacity: 95%;
-    border-radius: 6%;
+
 }
 
 /* WEATHER CSS */
 .city {
     margin-top: 50px;
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: 90px;
+    padding: 40px;
     clear: both;
     justify-content: end;
     float: right;
@@ -91,21 +88,19 @@ input {
     height: 100%;
     background-color:skyblue;
     opacity: 95%;
-    border-radius: 6%;
 }
 
 .weather {
-    position:absolute;
-    top: 50%;
+    position: absolute;
+    top: 43%;
     width: 50%;
     margin-top: 200px;
     margin-left: 350px;
-    padding: 10px;
+    padding: 20px;
     clear: both;
     background-color:skyblue;
     opacity: 95%;
-    border-radius: 6%;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .bg-primary {
